@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    /* border: 2px solid green; */
+    color: white;
+    position: absolute;
+    top: 34%;
+    left: 28%;
+}
+.container h1{
+    color: #29ebff;
+    border-bottom:4px solid cornflowerblue;
+    /* border-bottom:3px solid rgb(233, 177, 93); */
+    font-size: 35px;
+    margin-bottom:30px ;
+    padding: 5px 0;
+}
+.box{
+    /* border: 2px solid purple; */
+    padding: 0px 0px;
+}
+.box input{
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    padding: 7px 8px;
+    outline: none;
+    background: #3cfdfdb0;
+    margin: 6px 18px;
+    border-radius: 8px;
+}
+.box i{
+    background-color:coral;
+    padding: 8px 5px;
+    color: black;
+    width: 25px;
+    text-align: center;
+}
+.btn{
+    font-family: 'Orelega One', cursive;
+    background-color: rgb(253, 153, 60);
+    color: rgb(13, 14, 13);
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    width: 26%;
+    margin: 6px 219px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.btn:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+    
+}

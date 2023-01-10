@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-UMS</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset*/
+    body {
+        font-family: 'Orelega One', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+
+    }
+
+    header {
+        padding: 0px 0px;
+        top: 10%;
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid none;
+        position: absolute;
+        left: 84px;
+        top: 5px;
+    }
+
+    .left img {
+        width: 90px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 42%;
+        margin: 25px auto;
+        border: 2px solid none;
+    }
+
+    .right {
+        position: absolute;
+        right: 17px;
+        top: 35px;
+        display: inline-block;
+        border: 2px solid none;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 34px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: green;
+    }
+
+    .btn {
+        font-family: 'Orelega One', cursive;
+        margin: 0px 9px;
+        background-color: rgb(241, 124, 45);
+        color: black;
+        padding: 5px 6px;
+        border: 2px solid none;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(130, 211, 130);
+    }
+
+    .container {
+        position: absolute;
+        border: 2px solid green;
+        margin: 50px 40px;
+        padding: 0px 20px;
+        width: 20%;
+        border-radius: 14px;
+    }
+
+    .container h2 {
+        text-align: center;
+        position: relative;
+    }
+
+    .container img {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .container div {
+        /* border: 2px solid blue; */
+        position: absolute;
+        font-size: 20px;
+        width: auto;
+        margin: 6px;
+        padding: 36px 2px;
+        display: inline-block;
+    }
+
+    table {
+        /* border: 2px solid green; */
+        padding: 4px 0px;
+    }
+
+    .container1 {
+        align-content: center;
+        position: absolute;
+        top: 29%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 148px;
+        border-radius: 8px;
+    }
+
+    .but {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: inline-block;
+        height: 30px;
+        width: 500px;
+        border-radius: 7px;
+    }
+
+    .but1 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but2 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but3 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but4 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but5 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but6 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but7 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but8 {
+        font-family: 'Orelega One', cursive;
+        background-color: rgb(114, 197, 186);
+        display: block;
+        padding: 5px 5px;
+        left: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .but:hover {
+        background-color: rgb(109, 231, 53);
+    }
+
+    .but1:hover {
+        background-color: rgb(4, 116, 0);
+    }
+
+    .but2:hover {
+        background-color: rgb(35, 194, 30);
+    }
+
+    .but3:hover {
+        background-color: rgb(117, 207, 65);
+    }
+
+    .but4:hover {
+        background-color: rgb(4, 116, 0);
+    }
+
+    .but5:hover {
+        background-color: rgb(4, 116, 0);
+    }
+
+    .but6:hover {
+        background-color: rgb(126, 211, 15);
+    }
+
+    .but7:hover {
+        background-color: rgb(223, 131, 25);
+    }
+
+    .but8:hover {
+        background-color: rgb(235, 56, 32);
+    }
+
+    .container2 {
+        align-content: center;
+        position: absolute;
+        top: 45%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container3 {
+        align-content: center;
+        position: absolute;
+        top: 45%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container4 {
+        align-content: center;
+        position: absolute;
+        top: 45%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container5 {
+        align-content: center;
+        position: absolute;
+        top: 45%;
+        left: 69.5%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container6 {
+        align-content: center;
+        position: absolute;
+        top: 55%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container7 {
+        align-content: center;
+        position: absolute;
+        top: 55%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container8 {
+        align-content: center;
+        position: absolute;
+        top: 55%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .container9 {
+        align-content: center;
+        position: absolute;
+        top: 55%;
+        left: 69.5%;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .containertt {
+        display: inline-block;
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        width: 550px;
+        transform: translate(-50%, -50%);
+        /* border: 2px solid green; */
+        margin: 24px 40px;
+        padding: 20px 0px;
+        border-radius: 8px;
+    }
+
+    .containertt table {
+        width: 5px;
+        margin: 0px 119px;
+        padding: 5px 5px;
+    }
+
+    .containertt table caption {
+        align-content: center;
+        width: 270px;
+        font-size: 20px;
+
+    }
+
+    .containertt table tbody {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        padding: 5px 80px;
+        align-content: center;
+        width: 446px;
+    }
+
+    .containertt div {
+        background-color: lightcoral;
+        border: 2px solid black;
+    }
+
+    .containerAnn {
+        display: inline-block;
+        /* border: 1px solid orange; */
+        position: fixed;
+        top: 70%;
+        left: 765px;
+        padding: 0px 0px;
+        align-content: center;
+        height: 50px;
+        width: 191px;
+    }
+
+    .containerAnn h3 {
+        border: 2px solid black;
+        background-color: #f08080eb;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .containerAnn tbody {
+        padding: 0px 0px;
+        margin: 0px 0px;
+        align-content: center;
+        text-align: center;
+    }
+
+    .containerAnn td {
+        align-content: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="table.html">TIME-TABLE</a></li>
+                <li><a href="changePwd.html">CHANGE PASSWORD</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button onclick="document.location='contactUs.html'" class="btn">Contact-Us</button>
+            <button onclick="document.location='login.html'" class="btn">Log Out</button>
+        </div>
+        <hr>
+        <div class="container1">
+            <div>Over-All Attendance</div>
+            <button class="but"><b>70%</b></button>
+        </div>
+        <div class="container2">
+            <button class="but1">CSE 326- <b> 100%</b></button>
+        </div>
+        <div class="container3">
+            <button class="but2">CHE 110- <b> 95%</b></button>
+        </div>
+        <div class="container4">
+            <button class="but3">CSE 229- <b> 75%</b></button>
+        </div>
+        <div class="container5">
+            <button class="but4">ECE 213- <b> 100%</b></button>
+        </div>
+        <div class="container6">
+            <button class="but5">ECE 216- <b> 100%</b></button>
+        </div>
+        <div class="container7">
+            <button class="but6">MEC 107- <b> 50%</b></button>
+        </div>
+        <div class="container8">
+            <button class="but7">MTH 166-<b> 25%</b></button>
+        </div>
+        <div class="container9">
+            <button class="but8">PEL 121-<b> 10%</b></button>
+        </div>
+        <div class="containertt">
+            <table>
+                <caption>Today's TIME-TABLE</caption>
+                <thead>
+                    <th colspan="3">
+                        <div>MONDAY</div>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Time</th>
+                        <th>Course</th>
+                        <th>Att. Status</th>
+                    </tr>
+                    <tr>
+                        <td>9-11 AM</td>
+                        <td>CSE 229</td>
+                        <td><em>Not Marked</em></td>
+                    </tr>
+                    <tr>
+                        <td>12-1 PM</td>
+                        <td>ECE 213</td>
+                        <td><em>Not Marked</em></td>
+                    </tr>
+                    <tr>
+                        <td>1-2 PM</td>
+                        <td>MTH 166</td>
+                        <td><em>Not Marked</em></td>
+                    </tr>
+                    <tr>
+                        <td>3-5 PM</td>
+                        <td>CSE 326</td>
+                        <td><em>Not Marked</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Welcome</h2>
+        <img src="student.png" alt="">
+        <div>Ajay Nagar</div>
+        <hr>
+        <table>
+            <caption>Student Details</caption>
+            <tr>
+                <th>Reg-No.</th>
+                <td>12006893</td>
+            </tr>
+            <tr>
+                <th>Roll No.</th>
+                <td>RK20MDA35</td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <td>CSE-Data Science(ML-AI)</td>
+            </tr>
+            <tr>
+                <th>Semester</th>
+                <td>2nd</td>
+            </tr>
+            <tr>
+                <th>Hostel</th>
+                <td>--NONE--</td>
+            </tr>
+        </table>
+    </div>
+    <div class="containerAnn">
+        <h3>Announcements</h3>
+        <div class="tbl">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>No Announcements</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
